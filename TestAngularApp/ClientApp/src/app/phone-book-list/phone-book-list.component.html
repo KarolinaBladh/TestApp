@@ -1,0 +1,16 @@
+<div class="sorting">
+  <button class="sortByName" (click)="sortByName()">Sort by Name</button>
+  <button class="sortByNumber" (click)="sortByNumber()">Sort by Number</button>
+</div>
+<div class="table">
+  <div class="row">
+    <div class="cell heading name"><h2>Name</h2></div>
+    <div class="cell heading number"><h2>Number</h2></div>
+    <div class="cell heading isMobile" v><h2>Type</h2></div>
+  </div>
+  <div class="row" *ngFor="let phoneowner of phoneowners">
+    <div class="cell content name"><p>{{phoneowner.name}}</p></div>
+    <div class="cell content number"><p>{{phoneowner.number}}</p></div>
+    <div class="cell content isMobile"><p>{{phoneowner.isMobile}}</p></div>
+  </div>
+</div>

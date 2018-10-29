@@ -1,0 +1,57 @@
+h2 {
+  color: azure;
+  font: bold 25px arial, verdana;
+  margin: 0px;
+}
+
+p {
+  color: cadetblue;
+  font: bold 16px arial, verdana;
+  margin: 0px;
+}
+
+button {
+  background-color: coral;
+  border-style: none;
+  color: azure;
+  font: bold 20px arial, verdana;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  height: 40px;
+}
+
+.table {
+  display: table;
+  width: 600px;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  border: solid;
+  border-color: lightblue;
+  padding: 8px;
+}
+
+.heading {
+  background-color: cadetblue;
+}
+
+.content {
+  background-color: azure;
+}
+
+.name {
+  width: 350px;
+}
+
+.number {
+  width: 175px;
+}
+
+#isMobile {
+  width: 75px;
+}

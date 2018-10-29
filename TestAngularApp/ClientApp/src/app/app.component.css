@@ -1,0 +1,10 @@
+h1 {
+  color: teal;
+  font: bold 40px arial, verdana;
+  margin-left: 0px;
+}
+
+.component{
+  margin-left: 20px;
+  padding: 0px;
+}
