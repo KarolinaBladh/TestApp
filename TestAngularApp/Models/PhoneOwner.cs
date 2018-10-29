@@ -8,3 +8,5 @@
         public string IsMobile { get; set; }
     }
 }
+
+//hej karolina
