@@ -23,8 +23,9 @@ namespace TestAngularApp
         {
             
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            
-            services.AddDbContext<PhoneOwnersContext>(options => options.UseSqlServer(Configuration.GetConnectionString("PhoneOwnerDatabase")));
+
+            var connectionString = Configuration["PhoneOwners:ConnectionString"];
+            services.AddDbContext<PhoneOwnersContext>(options => options.UseSqlServer(connectionString));
 
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
